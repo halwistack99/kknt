@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pabrik Tahu Kebunagung</title>
+  <meta name="description" content="Pabrik tahu sederhana yang memproduksi tahu putih segar setiap hari. Tanpa pengawet, harga pabrik.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-logo">T</div>
+        <div class="brand-text">
+          <h1>Pabrik Tahu Kebunagung</h1>
+          <p>Tahu Putih Segar Setiap Hari</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#produk">Produk</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <img src="img/herobener.jpeg" alt="Pabrik Tahu Sederhana">
+    <div class="hero-overlay">
+      <h1>TAHU PUTIH SEGAR, TANPA PENGAWET</h1>
+      <p>Diproduksi setiap hari dengan kedelai pilihan</p>
+      <a href="#produk" class="btn-hero">Lihat Produk & Harga</a>
+    </div>
+  </section>
+
+  <!-- ==================== PRODUK ==================== -->
+    <section class="produk" id="produk">
+    <div class="container">
+        <h2 class="section-title">Produk & Harga</h2>
+        <p class="section-desc">Tahu putih segar, bisa dibeli eceran atau papanan</p>
+
+        <div class="produk-tunggal">
+
+        <!-- Foto Produk -->
+        <div class="produk-foto">
+            <img src="img/produk.jpeg" alt="Tahu Putih Segar">
+        </div>
+
+        <!-- Info & Harga -->
+        <div class="produk-detail">
+            <h3>Tahu Putih Segar</h3>
+            <p class="produk-deskripsi">
+            Tahu putih dibuat setiap hari dari kedelai pilihan, tanpa pengawet.
+            Cocok untuk lauk harian, usaha gorengan, atau warung makan.
+            </p>
+
+            <div class="opsi-harga">
+
+            <!-- Eceran -->
+            <div class="harga-card">
+                <div class="harga-label">Eceran</div>
+                <div class="harga-nilai">Rp 1.000<span>/potong</span></div>
+                <p class="harga-ket">Beli satuan, cocok untuk kebutuhan rumah tangga</p>
+            </div>
+
+            <!-- Papanan -->
+            <div class="harga-card highlight">
+                <div class="harga-label">Papanan</div>
+                <div class="harga-nilai">Rp 33.000<span>/papan</span></div>
+                <p class="harga-ket">1 papan = 49 potong, lebih hemat untuk usaha</p>
+            </div>
+
+            </div>
+
+            <p class="produk-note">
+            💡 Harga dapat berubah mengikuti harga kedelai pasar.
+            </p>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+<!-- ==================== GALERI ==================== -->
+<section class="galeri" id="galeri">
+  <div class="container">
+    <h2 class="section-title">Galeri Pabrik</h2>
+    <p class="section-desc">Dokumentasi proses pembuatan tahu di pabrik kami</p>
+
+    <div class="galeri-grid" id="galeriGrid">
+
+      <!-- Gambar yang selalu tampil (3 pertama) -->
+      <figure class="galeri-item">
+        <img src="img/galeri/1.jpg" alt="Perendaman kedelai">
+      </figure>
+
+      <figure class="galeri-item">
+        <img src="img/galeri/2.jpg" alt="Penggilingan kedelai">
+      </figure>
+
+      <figure class="galeri-item">
+        <img src="img/galeri/3.jpg" alt="Perebusan sari kedelai">
+      </figure>
+
+      <!-- Gambar yang disembunyikan dulu (muncul saat "Lihat Semua") -->
+      <figure class="galeri-item galeri-hidden">
+        <img src="img/galeri/4.jpg" alt="Pencetakan tahu">
+      </figure>
+      <figure class="galeri-item galeri-hidden">
+        <img src="img/galeri/5.jpg" alt="Pencetakan tahu">
+      </figure>
+      <figure class="galeri-item galeri-hidden">
+        <img src="img/galeri/6.jpg" alt="Pencetakan tahu">
+      </figure>
+      <figure class="galeri-item galeri-hidden">
+        <img src="img/galeri/7.jpg" alt="Pencetakan tahu">
+      </figure>
+      <figure class="galeri-item galeri-hidden">
+        <img src="img/galeri/8.jpg" alt="Pencetakan tahu">
+      </figure>
+      <figure class="galeri-item galeri-hidden">
+        <img src="img/galeri/9.jpg" alt="Pencetakan tahu">
+      </figure>
+      <figure class="galeri-item galeri-hidden">
+        <img src="img/galeri/10.jpg" alt="Pencetakan tahu">
+      </figure>
+      <figure class="galeri-item galeri-hidden">
+        <img src="img/galeri/11.jpg" alt="Pencetakan tahu">
+      </figure>
+      <figure class="galeri-item galeri-hidden">
+        <img src="img/galeri/12.jpg" alt="Pencetakan tahu">
+      </figure>
+      <figure class="galeri-item galeri-hidden">
+        <img src="img/galeri/13.jpg" alt="Pencetakan tahu">
+      </figure>
+      
+    </div>
+
+    <!-- Tombol Lihat Semua -->
+    <div class="galeri-toggle-wrap">
+      <button class="btn-galeri" id="btnGaleri">
+        <span class="btn-text">Lihat Semua Foto</span>
+        <span class="btn-icon">▾</span>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ==================== KONTAK ==================== -->
+  <section class="kontak" id="kontak">
+    <div class="container">
+      <h2 class="section-title">Kontak & Alamat</h2>
+      <p class="section-desc">Hubungi kami atau kunjungi langsung pabrik kami</p>
+
+      <div class="kontak-wrapper">
+
+        <!-- ===== KARTU KONTAK ===== -->
+        <div class="kontak-cards">
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/6281234567890?text=Halo%20Pabrik%20Tahu%2C%20saya%20mau%20tanya%20tentang%20produk."
+             target="_blank" rel="noopener"
+             class="kontak-card wa">
+            <div class="kontak-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <div class="kontak-info">
+              <h4>WhatsApp</h4>
+              <p>0823-0153-0020</p>
+              <span class="kontak-hint">Klik untuk chat →</span>
+            </div>
+          </a>
+
+          <!-- Telepon -->
+          <a href="tel:+6282301530020"
+             class="kontak-card telp">
+            <div class="kontak-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1A17 17 0 013 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <div class="kontak-info">
+              <h4>Telepon</h4>
+              <p>0823-0153-0020</p>
+              <span class="kontak-hint">Klik untuk menelepon →</span>
+            </div>
+          </a>
+
+          <!-- Alamat / Google Maps -->
+          <a href="https://www.google.com/maps/place/7%C2%B000'05.9%22S+113%C2%B050'57.0%22E/@-7.0016508,113.8465976,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-7.0016508!4d113.8491725?hl=id&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+             target="_blank" rel="noopener"
+             class="kontak-card alamat">
+            <div class="kontak-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+              </svg>
+            </div>
+            <div class="kontak-info">
+              <h4>Alamat</h4>
+              <p>Jl. Strawberry, Utara Jembatan Kebunagung</p>
+              <span class="kontak-hint">Klik untuk buka di Maps →</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- ===== PETA LOKASI ===== -->
+        <div class="kontak-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.0648086241304!2d113.84659757499729!3d-7.001650792999595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMDAnMDUuOSJTIDExM8KwNTAnNTcuMCJF!5e0!3m2!1sid!2sid!4v1791650646311!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+      </div>
+
+      <!-- ===== JAM BUKA ===== -->
+      <div class="jam-buka">
+        <div class="jam-item">
+          <strong>Senin – Minggu</strong>
+          <span>07.00 – 17.00 WIB</span>
+        </div>
+        <div class="jam-item">
+          <strong>Buka Setiap Hari</strong>
+          <span>Tanpa hari libur</span>
+        </div>
+        <div class="jam-item status" id="statusBuka">
+          <strong>Status</strong>
+          <span>Memuat...</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Pabrik Tahu Sederhana. Dibuat untuk dokumentasi KKNT.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== LIGHTBOX ==================== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <span class="lightbox-close" id="lightboxClose" aria-label="Tutup">&times;</span>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

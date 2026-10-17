@@ -1,0 +1,794 @@
+/* ============================
+   RESET & GLOBAL
+   ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fafafa;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #5a3e1b;
+  margin-bottom: 8px;
+}
+
+.section-desc {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+/* ============================
+   HEADER
+   ============================ */
+.header {
+  background: #fff7e6;
+  border-bottom: 3px solid #d4a373;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  background: #d4a373;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.brand-text h1 {
+  font-size: 1.1rem;
+  color: #5a3e1b;
+  line-height: 1.2;
+}
+
+.brand-text p {
+  font-size: 0.78rem;
+  color: #7a5c30;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #5a3e1b;
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #d4a373;
+}
+
+/* ============================
+   HERO
+   ============================ */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center 45%;   /* fokus ke bawah → tampilkan tahu */
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.65));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-overlay h2 {
+  font-size: 1.9rem;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.hero-overlay p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+.btn-hero {
+  display: inline-block;
+  background: #d4a373;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-hero:hover {
+  background: #b8855a;
+  transform: translateY(-2px);
+}
+
+/* ============================
+   PRODUK
+   ============================ */
+.produk {
+  padding: 48px 0;
+}
+
+.produk-tunggal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Foto Produk */
+.produk-foto {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.produk-foto img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.produk-foto:hover img {
+  transform: scale(1.04);
+}
+
+/* Detail Produk */
+.produk-detail h3 {
+  color: #5a3e1b;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.produk-deskripsi {
+  color: #666;
+  font-size: 0.92rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Opsi Harga */
+.opsi-harga {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.harga-card {
+  background: #f9f5ef;
+  border: 2px solid #f0e6d2;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.harga-card:hover {
+  transform: translateY(-3px);
+  border-color: #d4a373;
+  box-shadow: 0 6px 14px rgba(212, 163, 115, 0.2);
+}
+
+.harga-card.highlight {
+  background: #fff7e6;
+  border-color: #d4a373;
+}
+
+.harga-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #d4a373;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.harga-nilai {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 6px;
+}
+
+.harga-nilai span {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.harga-ket {
+  font-size: 0.78rem;
+  color: #777;
+  line-height: 1.4;
+}
+
+.produk-note {
+  font-size: 0.82rem;
+  color: #999;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* ============================
+   GALERI
+   ============================ */
+.galeri {
+  padding: 48px 0;
+  background: #fff7e6;
+}
+
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.galeri-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.galeri-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.galeri-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.35s;
+}
+
+.galeri-item:hover img {
+  transform: scale(1.06);
+}
+
+.galeri-item figcaption {
+  padding: 10px;
+  font-size: 0.83rem;
+  color: #5a3e1b;
+  text-align: center;
+  background: #fff;
+}
+
+/* Gambar yang disembunyikan */
+.galeri-hidden {
+  display: none;
+}
+
+/* Saat tombol diklik, tampilkan semua */
+.galeri-grid.expanded .galeri-hidden {
+  display: block;
+  animation: fadeInUp 0.4s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tombol Lihat Semua */
+.galeri-toggle-wrap {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.btn-galeri {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #d4a373;
+  color: #fff;
+  border: none;
+  padding: 11px 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 3px 10px rgba(212, 163, 115, 0.35);
+}
+
+.btn-galeri:hover {
+  background: #b8855a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(212, 163, 115, 0.45);
+}
+
+.btn-galeri:active {
+  transform: translateY(0);
+}
+
+.btn-galeri .btn-icon {
+  display: inline-block;
+  transition: transform 0.3s;
+  font-size: 0.75rem;
+}
+
+/* Saat expanded, panah diputar ke atas */
+.btn-galeri.expanded .btn-icon {
+  transform: rotate(180deg);
+}
+
+/* ============================
+   KONTAK
+   ============================ */
+.kontak {
+  padding: 48px 0;
+}
+
+.kontak-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+/* ---- Kartu Kontak ---- */
+.kontak-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.kontak-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-left: 4px solid #d4a373;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.kontak-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.kontak-card.wa:hover     { border-left-color: #25D366; }
+.kontak-card.telp:hover   { border-left-color: #1976D2; }
+.kontak-card.email:hover  { border-left-color: #E53935; }
+.kontak-card.alamat:hover { border-left-color: #FB8C00; }
+
+.kontak-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.kontak-card.wa     .kontak-icon { background: #25D366; }
+.kontak-card.telp   .kontak-icon { background: #1976D2; }
+.kontak-card.email  .kontak-icon { background: #E53935; }
+.kontak-card.alamat .kontak-icon { background: #FB8C00; }
+
+.kontak-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.kontak-info h4 {
+  color: #5a3e1b;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.kontak-info p {
+  font-size: 0.88rem;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+.kontak-hint {
+  font-size: 0.75rem;
+  color: #d4a373;
+  font-weight: 500;
+}
+
+/* ---- Peta ---- */
+.kontak-map {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  min-height: 380px;
+  background: #eee;
+}
+
+.kontak-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+}
+
+/* ---- Jam Buka ---- */
+.jam-buka {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  background: #fff7e6;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px dashed #d4a373;
+}
+
+.jam-item {
+  text-align: center;
+  padding: 6px;
+}
+
+.jam-item strong {
+  display: block;
+  color: #5a3e1b;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.jam-item span {
+  font-size: 0.88rem;
+  color: #666;
+}
+
+.jam-item.status span {
+  font-weight: bold;
+}
+
+.jam-item.status .buka  { color: #2e7d32; }
+.jam-item.status .tutup { color: #c62828; }
+
+/* ============================
+   FOOTER
+   ============================ */
+.footer {
+  background: #5a3e1b;
+  color: #f5e6c8;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 0.83rem;
+}
+
+/* ============================
+   LIGHTBOX
+   ============================ */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.lightbox.active {
+  display: flex;
+  animation: fadeIn 0.25s ease;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 26px;
+  font-size: 2.4rem;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  user-select: none;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.lightbox-close:hover {
+  color: #d4a373;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+
+/* Tablet & bawah (≤ 900px) */
+@media (max-width: 900px) {
+  .hero img {
+    height: 360px;
+    object-position: center 65%;
+  }
+  .kontak-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .kontak-map,
+  .kontak-map iframe {
+    min-height: 300px;
+  }
+    .produk-tunggal {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .produk-foto img {
+    height: 280px;
+  }
+}
+
+/* HP besar & tablet kecil (≤ 640px) */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 14px;
+      .opsi-harga {
+    grid-template-columns: 1fr;
+  }
+
+  .produk-foto img {
+    height: 220px;
+  }
+
+  .produk-detail h3 {
+    font-size: 1.2rem;
+  }
+
+  .harga-nilai {
+    font-size: 1.2rem;
+  }
+  }
+
+  /* Header jadi 2 baris */
+  .header-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .brand-text h1 { font-size: 1.05rem; }
+  .brand-text p  { font-size: 0.75rem; }
+
+  .nav {
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 8px;
+    border-top: 1px dashed #e5d3b3;
+  }
+
+  .nav a { font-size: 0.88rem; }
+
+  /* Hero */
+  .hero img {
+    height: 300px;
+    object-position: center 70%;
+  }
+
+  .hero-overlay h2 {
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  .hero-overlay p {
+    font-size: 0.85rem;
+  }
+
+  .btn-hero {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+  }
+
+  /* Section spacing lebih rapat */
+  .produk,
+  .galeri,
+  .kontak {
+    padding: 32px 0;
+  }
+
+  .section-title { font-size: 1.3rem; }
+  .section-desc  { font-size: 0.85rem; margin-bottom: 20px; }
+
+  /* Produk grid: 1 kolom */
+  .produk-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Galeri: 2 kolom di HP */
+  .galeri-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .galeri-item img { height: 120px; }
+  .galeri-item figcaption {
+    font-size: 0.75rem;
+    padding: 7px;
+  }
+
+  /* Kontak */
+  .kontak-card {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .kontak-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .kontak-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .kontak-info h4 { font-size: 0.9rem; }
+  .kontak-info p  { font-size: 0.82rem; }
+  .kontak-hint    { font-size: 0.7rem; }
+
+  .kontak-map,
+  .kontak-map iframe {
+    min-height: 240px;
+  }
+
+  /* Jam buka: susun 1 kolom */
+  .jam-buka {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .jam-item strong { font-size: 0.85rem; }
+  .jam-item span   { font-size: 0.82rem; }
+}
+
+/* HP kecil (≤ 400px) */
+@media (max-width: 400px) {
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .brand-text h1 { font-size: 0.95rem; }
+  .brand-text p  { font-size: 0.7rem; }
+
+  .hero img {
+    height: 260px;
+    object-position: center 70%;
+  }
+
+  .hero-overlay h2 { font-size: 1.15rem; }
+  .hero-overlay p  { font-size: 0.78rem; }
+
+  .galeri-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .galeri-item img { height: 160px; }
+}
+
+/* Orientasi landscape di HP (misal ditonton sambil rebahan) */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero img {
+    height: 220px;
+  }
+  .hero-overlay h2 { font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+  .brand-text h1 { font-size: 1rem; }
+  .brand-logo { width: 38px; height: 38px; font-size: 1.2rem; }
+  .produk-card img { height: 160px; }
+  .galeri-item img { height: 130px; }
+  .lightbox-close { font-size: 1.9rem; top: 10px; right: 16px; }
+}
